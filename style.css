@@ -1,3 +1,57 @@
 #root {
-  color: red;
+  color: rgb(34, 24, 24);
+}
+header{
+  background-color: #a52a2a;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav{
+ 
+  width: 50%;
+}
+
+h1{
+  color: antiquewhite;
+  font-size: 40px;
+  text-align: center;
+  width: 35%;
+}
+ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+li{
+  list-style: none;
+  color: antiquewhite;
+}
+li:hover{
+  font-size: 20px;
+}
+.displayArea{
+  
+  background-color: #f5e9e7;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+}
+.card{
+
+  background-color: #d48e8c;
+  width: 40%;
+  height: 50%;
+  margin: auto;
+}
+h3{
+  border: 1px solid pink;
+}
+img{
+  border: 1px solid green;
+}
+
+#summary{
+  border: 1px solid black;
 }
