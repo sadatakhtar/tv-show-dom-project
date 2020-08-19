@@ -28,9 +28,7 @@ li{
   list-style: none;
   color: antiquewhite;
 }
-li:hover{
-  font-size: 20px;
-}
+
 .displayArea{
   
   background-color: #f5e9e7;
@@ -73,4 +71,10 @@ p{
 footer{
   text-align: center;
   font-size: 14px;
+}
+#showAllBtn{
+  background-color: orangered;
+}
+#showAllBtn:hover{
+  background-color: palevioletred;
 }
