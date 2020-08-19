@@ -16,6 +16,7 @@ const allEpisodes = getAllEpisodes();
 let cardEl = document.querySelector('.card');
 let searchBar = document.getElementById('searchBar');
 let showAllBtn = document.getElementById('showAllBtn');
+let clearBtn = document.getElementById('clearBtn');
 
 
 //let titleEl = document.getElementById('title');
@@ -51,7 +52,9 @@ showAllBtn.onclick = () => {
     
 }
 //RESET THE PAGE
-
+clearBtn.onclick = () =>{
+    location.reload();
+}
 
 
  function searchEpisodes(){
