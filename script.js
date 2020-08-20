@@ -44,14 +44,30 @@ clearBtn.onclick = () =>{
     location.reload();
   
 }
+//FUNCTION TO CONVERT FIRST LETTER TO CAPS
+function changeFirstCharUpper(word){
+    let splitWord = word.split('');
+    let firstLetter = splitWord[0].toUpperCase();
+    splitWord[0] = firstLetter;
+
+    for(let i=1; i< splitWord.length; i++){
+        if(splitWord[i] === ' '){
+            let nextWord = splitWord[i+1].toUpperCase();
+            splitWord[i+1] = nextWord;
+        }
+    }
+    return splitWord.join('');
+}
 
 //USED IN HTML ONKEYUP
 function searchEpisodes(){
      let inputValue = searchBar.value;
-    console.log(inputValue);
+     let capWord = changeFirstCharUpper(inputValue);
+
+    console.log(capWord);
 
     for(let i=0; i , allEpisodes.length; i++){
-    if(inputValue === allEpisodes[i].name || inputValue === allEpisodes[i].summary){
+    if(capWord === allEpisodes[i].name || capWord === allEpisodes[i].summary){
         console.log('yipeee');
 
         let newTitleTag = document.createElement('h3');

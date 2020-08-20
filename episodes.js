@@ -8,7 +8,7 @@ function getOneEpisode() {
     id: 4952,
     url:
       "http://www.tvmaze.com/episodes/4952/game-of-thrones-1x01-winter-is-coming",
-    name: "Winter is Coming",
+    name: "Winter Is Coming",
     season: 1,
     number: 1,
     airdate: "2011-04-17",
@@ -37,7 +37,7 @@ function getAllEpisodes() {
       id: 4952,
       url:
         "http://www.tvmaze.com/episodes/4952/game-of-thrones-1x01-winter-is-coming",
-      name: "Winter is Coming",
+      name: "Winter Is Coming",
       season: 1,
       number: 1,
       airdate: "2011-04-17",
@@ -111,7 +111,7 @@ function getAllEpisodes() {
       id: 4955,
       url:
         "http://www.tvmaze.com/episodes/4955/game-of-thrones-1x04-cripples-bastards-and-broken-things",
-      name: "Cripples, Bastards, and Broken Things",
+      name: "Cripples, Bastards, And Broken Things",
       season: 1,
       number: 4,
       airdate: "2011-05-08",
@@ -136,7 +136,7 @@ function getAllEpisodes() {
       id: 4956,
       url:
         "http://www.tvmaze.com/episodes/4956/game-of-thrones-1x05-the-wolf-and-the-lion",
-      name: "The Wolf and the Lion",
+      name: "The Wolf And The Lion",
       season: 1,
       number: 5,
       airdate: "2011-05-15",
@@ -186,7 +186,7 @@ function getAllEpisodes() {
       id: 4958,
       url:
         "http://www.tvmaze.com/episodes/4958/game-of-thrones-1x07-you-win-or-you-die",
-      name: "You Win or You Die",
+      name: "You Win Or You Die",
       season: 1,
       number: 7,
       airdate: "2011-05-29",
@@ -260,7 +260,7 @@ function getAllEpisodes() {
       id: 4961,
       url:
         "http://www.tvmaze.com/episodes/4961/game-of-thrones-1x10-fire-and-blood",
-      name: "Fire and Blood",
+      name: "Fire And Blood",
       season: 1,
       number: 10,
       airdate: "2011-06-19",
@@ -335,7 +335,7 @@ function getAllEpisodes() {
       id: 4964,
       url:
         "http://www.tvmaze.com/episodes/4964/game-of-thrones-2x03-what-is-dead-may-never-die",
-      name: "What is Dead May Never Die",
+      name: "What Is Dead May Never Die",
       season: 2,
       number: 3,
       airdate: "2012-04-15",
@@ -360,7 +360,7 @@ function getAllEpisodes() {
       id: 4965,
       url:
         "http://www.tvmaze.com/episodes/4965/game-of-thrones-2x04-garden-of-bones",
-      name: "Garden of Bones",
+      name: "Garden Of Bones",
       season: 2,
       number: 4,
       airdate: "2012-04-22",
@@ -385,7 +385,7 @@ function getAllEpisodes() {
       id: 4966,
       url:
         "http://www.tvmaze.com/episodes/4966/game-of-thrones-2x05-the-ghost-of-harrenhal",
-      name: "The Ghost of Harrenhal",
+      name: "The Ghost Of Harrenhal",
       season: 2,
       number: 5,
       airdate: "2012-04-29",
@@ -410,7 +410,7 @@ function getAllEpisodes() {
       id: 4967,
       url:
         "http://www.tvmaze.com/episodes/4967/game-of-thrones-2x06-the-old-gods-and-the-new",
-      name: "The Old Gods and the New",
+      name: "The Old Gods And The New",
       season: 2,
       number: 6,
       airdate: "2012-05-06",
@@ -460,7 +460,7 @@ function getAllEpisodes() {
       id: 4969,
       url:
         "http://www.tvmaze.com/episodes/4969/game-of-thrones-2x08-the-prince-of-winterfell",
-      name: "The Prince of Winterfell",
+      name: "The Prince Of Winterfell",
       season: 2,
       number: 8,
       airdate: "2012-05-20",
@@ -585,7 +585,7 @@ function getAllEpisodes() {
       id: 4974,
       url:
         "http://www.tvmaze.com/episodes/4974/game-of-thrones-3x03-walk-of-punishment",
-      name: "Walk of Punishment",
+      name: "Walk Of Punishment",
       season: 3,
       number: 3,
       airdate: "2013-04-14",
@@ -610,7 +610,7 @@ function getAllEpisodes() {
       id: 4975,
       url:
         "http://www.tvmaze.com/episodes/4975/game-of-thrones-3x04-and-now-his-watch-is-ended",
-      name: "And Now His Watch is Ended",
+      name: "And Now His Watch Is Ended",
       season: 3,
       number: 4,
       airdate: "2013-04-21",
@@ -635,7 +635,7 @@ function getAllEpisodes() {
       id: 4976,
       url:
         "http://www.tvmaze.com/episodes/4976/game-of-thrones-3x05-kissed-by-fire",
-      name: "Kissed by Fire",
+      name: "Kissed By Fire",
       season: 3,
       number: 5,
       airdate: "2013-04-28",
@@ -684,7 +684,7 @@ function getAllEpisodes() {
       id: 4978,
       url:
         "http://www.tvmaze.com/episodes/4978/game-of-thrones-3x07-the-bear-and-the-maiden-fair",
-      name: "The Bear and the Maiden Fair",
+      name: "The Bear And The Maiden Fair",
       season: 3,
       number: 7,
       airdate: "2013-05-12",
@@ -734,7 +734,7 @@ function getAllEpisodes() {
       id: 4980,
       url:
         "http://www.tvmaze.com/episodes/4980/game-of-thrones-3x09-the-rains-of-castamere",
-      name: "The Rains of Castamere",
+      name: "The Rains Of Castamere",
       season: 3,
       number: 9,
       airdate: "2013-06-02",
@@ -808,7 +808,7 @@ function getAllEpisodes() {
       id: 4983,
       url:
         "http://www.tvmaze.com/episodes/4983/game-of-thrones-4x02-the-lion-and-the-rose",
-      name: "The Lion and the Rose",
+      name: "The Lion And The Rose",
       season: 4,
       number: 2,
       airdate: "2014-04-13",
@@ -833,7 +833,7 @@ function getAllEpisodes() {
       id: 4984,
       url:
         "http://www.tvmaze.com/episodes/4984/game-of-thrones-4x03-breaker-of-chains",
-      name: "Breaker of Chains",
+      name: "Breaker Of Chains",
       season: 4,
       number: 3,
       airdate: "2014-04-20",
@@ -883,7 +883,7 @@ function getAllEpisodes() {
       id: 4986,
       url:
         "http://www.tvmaze.com/episodes/4986/game-of-thrones-4x05-first-of-his-name",
-      name: "First of His Name",
+      name: "First Of His Name",
       season: 4,
       number: 5,
       airdate: "2014-05-04",
@@ -908,7 +908,7 @@ function getAllEpisodes() {
       id: 4987,
       url:
         "http://www.tvmaze.com/episodes/4987/game-of-thrones-4x06-the-laws-of-gods-and-men",
-      name: "The Laws of Gods and Men",
+      name: "The Laws Of Gods And Men",
       season: 4,
       number: 6,
       airdate: "2014-05-11",
@@ -958,7 +958,7 @@ function getAllEpisodes() {
       id: 4989,
       url:
         "http://www.tvmaze.com/episodes/4989/game-of-thrones-4x08-the-mountain-and-the-viper",
-      name: "The Mountain and the Viper",
+      name: "The Mountain And The Viper",
       season: 4,
       number: 8,
       airdate: "2014-06-01",
@@ -983,7 +983,7 @@ function getAllEpisodes() {
       id: 4990,
       url:
         "http://www.tvmaze.com/episodes/4990/game-of-thrones-4x09-the-watchers-on-the-wall",
-      name: "The Watchers on the Wall",
+      name: "The Watchers On The Wall",
       season: 4,
       number: 9,
       airdate: "2014-06-08",
@@ -1033,7 +1033,7 @@ function getAllEpisodes() {
       id: 116522,
       url:
         "http://www.tvmaze.com/episodes/116522/game-of-thrones-5x01-the-wars-to-come",
-      name: "The Wars to Come",
+      name: "The Wars To Come",
       season: 5,
       number: 1,
       airdate: "2015-04-12",
@@ -1058,7 +1058,7 @@ function getAllEpisodes() {
       id: 144328,
       url:
         "http://www.tvmaze.com/episodes/144328/game-of-thrones-5x02-the-house-of-black-and-white",
-      name: "The House of Black and White",
+      name: "The House Of Black And White",
       season: 5,
       number: 2,
       airdate: "2015-04-19",
@@ -1108,7 +1108,7 @@ function getAllEpisodes() {
       id: 144330,
       url:
         "http://www.tvmaze.com/episodes/144330/game-of-thrones-5x04-sons-of-the-harpy",
-      name: "Sons of the Harpy",
+      name: "Sons Of The Harpy",
       season: 5,
       number: 4,
       airdate: "2015-05-03",
@@ -1133,7 +1133,7 @@ function getAllEpisodes() {
       id: 151777,
       url:
         "http://www.tvmaze.com/episodes/151777/game-of-thrones-5x05-kill-the-boy",
-      name: "Kill the Boy",
+      name: "Kill The Boy",
       season: 5,
       number: 5,
       airdate: "2015-05-10",
@@ -1233,7 +1233,7 @@ function getAllEpisodes() {
       id: 160040,
       url:
         "http://www.tvmaze.com/episodes/160040/game-of-thrones-5x09-the-dance-of-dragons",
-      name: "The Dance of Dragons",
+      name: "The Dance Of Dragons",
       season: 5,
       number: 9,
       airdate: "2015-06-07",
@@ -1357,7 +1357,7 @@ function getAllEpisodes() {
       id: 664674,
       url:
         "http://www.tvmaze.com/episodes/664674/game-of-thrones-6x04-book-of-the-stranger",
-      name: "Book of the Stranger",
+      name: "Book Of The Stranger",
       season: 6,
       number: 4,
       airdate: "2016-05-15",
@@ -1407,7 +1407,7 @@ function getAllEpisodes() {
       id: 664676,
       url:
         "http://www.tvmaze.com/episodes/664676/game-of-thrones-6x06-blood-of-my-blood",
-      name: "Blood of My Blood",
+      name: "Blood Of My Blood",
       season: 6,
       number: 6,
       airdate: "2016-05-29",
@@ -1481,7 +1481,7 @@ function getAllEpisodes() {
       id: 729574,
       url:
         "http://www.tvmaze.com/episodes/729574/game-of-thrones-6x09-battle-of-the-bastards",
-      name: "Battle of the Bastards",
+      name: "Battle Of The Bastards",
       season: 6,
       number: 9,
       airdate: "2016-06-19",
@@ -1506,7 +1506,7 @@ function getAllEpisodes() {
       id: 729575,
       url:
         "http://www.tvmaze.com/episodes/729575/game-of-thrones-6x10-the-winds-of-winter",
-      name: "The Winds of Winter",
+      name: "The Winds Of Winter",
       season: 6,
       number: 10,
       airdate: "2016-06-26",
@@ -1606,7 +1606,7 @@ function getAllEpisodes() {
       id: 1221412,
       url:
         "http://www.tvmaze.com/episodes/1221412/game-of-thrones-7x04-the-spoils-of-war",
-      name: "The Spoils of War",
+      name: "The Spoils Of War",
       season: 7,
       number: 4,
       airdate: "2017-08-06",
@@ -1656,7 +1656,7 @@ function getAllEpisodes() {
       id: 1221414,
       url:
         "http://www.tvmaze.com/episodes/1221414/game-of-thrones-7x06-beyond-the-wall",
-      name: "Beyond the Wall",
+      name: "Beyond The Wall",
       season: 7,
       number: 6,
       airdate: "2017-08-20",
@@ -1681,7 +1681,7 @@ function getAllEpisodes() {
       id: 1221415,
       url:
         "http://www.tvmaze.com/episodes/1221415/game-of-thrones-7x07-the-dragon-and-the-wolf",
-      name: "The Dragon and the Wolf",
+      name: "The Dragon And The Wolf",
       season: 7,
       number: 7,
       airdate: "2017-08-27",
@@ -1731,7 +1731,7 @@ function getAllEpisodes() {
       id: 1623964,
       url:
         "http://www.tvmaze.com/episodes/1623964/game-of-thrones-8x02-a-knight-of-the-seven-kingdoms",
-      name: "A Knight of the Seven Kingdoms",
+      name: "A Knight Of The Seven Kingdoms",
       season: 8,
       number: 2,
       airdate: "2019-04-21",
@@ -1780,7 +1780,7 @@ function getAllEpisodes() {
       id: 1623966,
       url:
         "http://www.tvmaze.com/episodes/1623966/game-of-thrones-8x04-the-last-of-the-starks",
-      name: "The Last of the Starks",
+      name: "The Last Of The Starks",
       season: 8,
       number: 4,
       airdate: "2019-05-05",
