@@ -84,7 +84,7 @@ function searchEpisodes(){
 
     }else {
         console.log('next time');
-        //location.reload();
+       
        
     }
 
