@@ -1,95 +1,93 @@
+//You can edit ALL of the code here
 //SELECTORS
-const allEpisodes = getAllEpisodes();
-let cardEl = document.querySelector('.card');
-let searchBar = document.getElementById('searchBar');
-let showAllBtn = document.getElementById('showAllBtn');
-let clearBtn = document.getElementById('clearBtn');
+const allShows = getAllEpisodes();
+let mainDiv = document.querySelector('.main');
+let liveSearchBox = document.getElementById('searchBox');
+let totalEpisodes = getAllEpisodes().length;
+let clearButton = document.getElementById('clearBtn');
+let showAllEpisodes = document.getElementById('showAllBtn');
 
+function setup() {
+  const allEpisodes = getAllEpisodes();
+  mainCards(); 
+}
+window.onload = setup;
 
-function displayAll(){
-        for(let i=0;i< allEpisodes.length; i++){
-            let newTitleTag = document.createElement('h3');
-            newTitleTag.textContent = `${allEpisodes[i].name} S0${allEpisodes[i].season}E0${allEpisodes[i].number}`;
-            cardEl.appendChild(newTitleTag);
+//DISPLAYS ALL EPISODES
+function mainCards(){
+  for(let i=0; i< allShows.length; i++){
+    //CREATE ELEMENTS
+    let displayCardDiv = document.createElement('div');
+    displayCardDiv.id = "card";
+    displayCardDiv.style.overflow= "auto";
+    let title = document.createElement('h2');
+    title.id = "cardTitle";
+    let cardImage = document.createElement('img');
+    let cardSummary = document.createElement('p');
+    cardSummary.id= "cardSummary";
+    let displayResult = document.getElementById('display');
 
-            let imgTag = document.createElement('img');
-            imgTag.src = `${allEpisodes[i].image.medium}`;
-            cardEl.appendChild(imgTag);
+    //ADD CONTENTS TO ELEMENTS
+    title.textContent= `${allShows[i].name} - S0${allShows[i].season}E0${allShows[i].number}`;
+    cardImage.src = `${allShows[i].image.medium}`;
+    cardImage.style.borderRadius = "5px"
+    cardSummary.textContent = `${allShows[i].summary}`;
+    displayResult.textContent = `Displaying ${allShows.length}/${totalEpisodes} Episodes`;
 
-            let pTag = document.createElement('p');
-            pTag.textContent = `${allEpisodes[i].summary}`;
-            cardEl.appendChild(pTag);
-        }
+    //APPEND ELEMENTS TO PARENT
+    mainDiv.appendChild(displayCardDiv);
+    displayCardDiv.appendChild(title);
+    displayCardDiv.appendChild(cardImage);
+    displayCardDiv.appendChild(cardSummary);
+
+  }
+  
+ 
 }
 
 //EVENT LISTENERS
-showAllBtn.onclick = () => {
-    for(let i=0;i< allEpisodes.length; i++){
-            let newTitleTag = document.createElement('h3');
-            newTitleTag.textContent = `${allEpisodes[i].name} S0${allEpisodes[i].season}E0${allEpisodes[i].number}`;
-            cardEl.appendChild(newTitleTag);
-
-            let imgTag = document.createElement('img');
-            imgTag.src = `${allEpisodes[i].image.medium}`;
-            cardEl.appendChild(imgTag);
-
-            let pTag = document.createElement('p');
-            pTag.textContent = `${allEpisodes[i].summary}`;
-            cardEl.appendChild(pTag);
-        }
-    
+showAllEpisodes.onclick = () => {
+  location.reload();
 }
-//RESET THE PAGE
-clearBtn.onclick = () =>{
-    location.reload();
-  
+clearButton.onclick = () =>{
+  mainDiv.textContent="";
 }
-//FUNCTION TO CONVERT FIRST LETTER TO CAPS
-function changeFirstCharUpper(word){
-    let splitWord = word.split('');
-    let firstLetter = splitWord[0].toUpperCase();
-    splitWord[0] = firstLetter;
+liveSearchBox.addEventListener('input', searchHandler);
 
-    for(let i=1; i< splitWord.length; i++){
-        if(splitWord[i] === ' '){
-            let nextWord = splitWord[i+1].toUpperCase();
-            splitWord[i+1] = nextWord;
-        }
-    }
-    return splitWord.join('');
+function searchHandler(){
+  let searchResult = liveSearchBox.value.toLowerCase();
+  let filteredEpisodes = allShows.filter(({name, summary}) => {
+    return (name.toLowerCase().includes(searchResult) || summary.toLowerCase().includes(searchResult));
+  });
+
+  //REMOVES PREVIOUS RESULTS
+  mainDiv.textContent= "";
+
+  for(let i=0; i< filteredEpisodes.length; i++){
+    //CREATE ELEMENTS
+    let displayCardDiv = document.createElement('div');
+    displayCardDiv.id = "card";
+    displayCardDiv.style.overflow= "auto";
+    let title = document.createElement('h2');
+    title.id = "cardTitle";
+    let cardImage = document.createElement('img');
+    let cardSummary = document.createElement('p');
+    cardSummary.id= "cardSummary";
+    let displayResult = document.getElementById('display');
+
+    //ADD CONTENT TO ELEMENTS
+    title.textContent= `${filteredEpisodes[i].name} - S0${filteredEpisodes[i].season}E0${filteredEpisodes[i].number}`;
+    cardImage.src = `${filteredEpisodes[i].image.medium}`;
+    cardImage.style.borderRadius = "5px"
+    cardSummary.textContent = `${filteredEpisodes[i].summary}`;
+    displayResult.textContent = `showing ${filteredEpisodes.length}/${totalEpisodes} episodes`;
+
+    //APPEND TO PARENT NODES
+    mainDiv.appendChild(displayCardDiv);
+    displayCardDiv.appendChild(title);
+    displayCardDiv.appendChild(cardImage);
+    displayCardDiv.appendChild(cardSummary);
+  }
+//console.log(filteredEpisodes);
+
 }
-
-//USED IN HTML ONKEYUP
-function searchEpisodes(){
-     let inputValue = searchBar.value;
-     let capWord = changeFirstCharUpper(inputValue);
-
-    console.log(capWord);
-
-    for(let i=0; i , allEpisodes.length; i++){
-    if(capWord === allEpisodes[i].name || capWord === allEpisodes[i].summary){
-        console.log('yipeee');
-
-        let newTitleTag = document.createElement('h3');
-        newTitleTag.textContent = `${allEpisodes[i].name} S0${allEpisodes[i].season}E0${allEpisodes[i].number}`;
-        cardEl.appendChild(newTitleTag);
-
-        let imgTag = document.createElement('img');
-        imgTag.src = `${allEpisodes[i].image.medium}`;
-        cardEl.appendChild(imgTag);
-
-        let pTag = document.createElement('p');
-        pTag.textContent = `${allEpisodes[i].summary}`;
-        cardEl.appendChild(pTag);
-
-    }else {
-        console.log('next time');
-       
-       
-    }
-
-
-
-    }
-
-};

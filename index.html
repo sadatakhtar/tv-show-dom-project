@@ -3,42 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TV Show Project | Sadat Akhtar (sadatakhtar)</title>
+    <title>TV Show Project | Sadat Akhtar(sadatakhtar)</title>
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
     <div id="root">
-      <header>
-        <h1>TV Shows</h1>
-        <nav>
-          <ul>
-            <li>
-              <input id="searchBar" type="text" placeholder="Live Search " onkeyup="searchEpisodes()" title="Enter Tv-show">
-            </li>
-            <button id="showAllBtn"><li>Show All Episodes</li></button>
-            <button id="clearBtn"><li>Clear Search</li></button>
-        </nav>
-      </header>
-      <div class="displayArea">
-        <div class="card">
-          <!--<h3 id="title">title</h3>-->
-          <img id="pic" src="">
-         
+      <div class="container">
+        <div class="header">
+          <header>
+            <nav>
+              <h1>Tv Shows</h1>
+              <ul>
+               <li><input id="searchBox" type="text" placeholder="Live Search"  title="Enter Episode name"></li> 
+                <li><button id="clearBtn">Clear Search</button></li>
+                <li><button id="showAllBtn">Show All Episodes</button></li>
+              </ul>
+              <p id="display"></p>
+            </nav>
+          </header>
+        </div>
+        <div class="main">
+          
+
         </div>
       </div>
-      <footer>
-        <h4>&copy;Copyright 2020. All data comes from <a href="https://www.tvmaze.com/">TVMaze.com</a></h4>
-      </footer>
-
     </div>
 
+    <footer>
+      <h5>&copy;Copyright 2020. All data comes from<a href="https://www.tvmaze.com/">TVMaze.com</a></h5>
+    </footer>
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
-    <script  src="episodes.js"></script>
+    <script src="episodes.js"></script>
 
     <!-- Loads YOUR javascript code -->
     <script src="script.js"></script>
-
   </body>
 </html>
