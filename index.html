@@ -19,6 +19,13 @@
                <li><input id="searchBox" type="text" placeholder="Live Search"  title="Enter Episode name"></li> 
                 <li><button id="clearBtn">Clear Search</button></li>
                 <li><button id="showAllBtn">Show All Episodes</button></li>
+                <li>
+                  <form action="">
+                  <select name="episodes" id="episodes" title="Choose Episode" onchange="selectEpisode(this)">
+                    <option value="S01E01">Select All</option>
+                  </select>
+                </form>
+                </li>
               </ul>
               <p id="display"></p>
             </nav>
