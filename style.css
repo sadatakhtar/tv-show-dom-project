@@ -75,15 +75,6 @@ li{
 footer{
   color: white;
   text-align: center;
-  /* background-color: #879ceb;
-  width: 99%;
-  height: 20vh;
-  margin: auto;
-  border: 2px dotted white;
-  border-radius: 5px;
-  position: fixed;
-  top: 93vh;
-  text-align: center; */
 }
 #display{
   font-size: 10px;
@@ -366,13 +357,11 @@ footer{
     
    
   }
-  form{
+  /* form{
     
     width: 200px;
-    
-
-    
-  }
+ 
+  } */
   
 
 }
@@ -508,6 +497,7 @@ footer{
   }
  
   nav{
+  
     width: fit-content;
     height: 250px;
     display: flex;
