@@ -30,7 +30,8 @@ function mainCards(){
     //ADD CONTENTS TO ELEMENTS
     title.textContent= `${allShows[i].name} - S0${allShows[i].season}E0${allShows[i].number}`;
     cardImage.src = `${allShows[i].image.medium}`;
-    cardImage.style.borderRadius = "5px"
+    cardImage.style.borderRadius = "5px";
+    cardImage.style.width = "250px";
     cardSummary.textContent = `${allShows[i].summary}`;
     displayResult.textContent = `Displaying ${allShows.length}/${totalEpisodes} Episodes`;
 

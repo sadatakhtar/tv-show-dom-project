@@ -241,6 +241,7 @@ footer{
     width: 100px;
   }
   
+  
 
 }
 
@@ -261,6 +262,15 @@ footer{
   nav{
     width: 90%;
    
+  }
+  #card{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    
   }
   ul{
     width: 500px;
@@ -345,6 +355,10 @@ footer{
   #card{
     width: fit-content;
     height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
     
   }
   #display{
@@ -408,6 +422,10 @@ footer{
   #card{
     width: fit-content;
     height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
     
   }
   #display{
@@ -471,6 +489,10 @@ footer{
   #card{
     width: fit-content;
     height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
     
   }
   #display{
@@ -538,6 +560,10 @@ footer{
   #card{
     width: fit-content;
     height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
     
   }
   #display{
