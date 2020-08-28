@@ -138,6 +138,15 @@ footer{
     height: 17px;
     width: 100px;
   }
+  #card{
+    
+    height: 450px;
+    display: flex;
+    justify-content: start;
+    align-self: center;
+    align-items: center;
+    
+  }
   
 
 }
@@ -264,10 +273,10 @@ footer{
    
   }
   #card{
-    width: fit-content;
-    height: fit-content;
+    width: 220px;
+    height: 450px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-self: center;
     align-items: center;
     
