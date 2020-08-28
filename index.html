@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TV Show Project | Sadat Akhtar(sadatakhtar)</title>
     <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Oswald&display=swap" rel="stylesheet">
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
@@ -16,15 +17,16 @@
             <nav>
               <h1>Tv Shows</h1>
               <ul>
+               
                <li><input id="searchBox" type="text" placeholder="Live Search"  title="Enter Episode name"></li> 
                 <li><button id="clearBtn">Clear Search</button></li>
                 <li><button id="showAllBtn">Show All Episodes</button></li>
                 <li>
-                  <form action="">
+                  
                   <select name="episodes" id="episodes" title="Choose Episode" onchange="selectEpisode(this)">
-                    <option value="S01E01">Select All</option>
+                    <option id="firstTab" value="-1">Episode</option>
                   </select>
-                </form>
+                
                 </li>
               </ul>
               <p id="display"></p>

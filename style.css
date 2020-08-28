@@ -1,5 +1,7 @@
 #root {
   background-color: black;
+  font-family: 'Alata', sans-serif;
+  
 }
 header{
   
@@ -8,21 +10,21 @@ header{
 nav{
   
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 80%;
   margin: auto;
 }
 
 h1{
-  
+  font-weight: 600;
   font-size: 40px;
 }
 
 ul{
- 
+  
   display: flex;
-  justify-content: space-around;
-  width: 70%;
+  justify-content: start;
+  width: 60%;
   margin: auto;
 }
 li{
@@ -55,6 +57,7 @@ li{
   
 }
 #cardTitle{
+  font-weight: 300;
   text-align: center;
   margin-top: 0;
   border: 2px solid gray;
@@ -65,16 +68,501 @@ li{
   align-items: center;
 }
 #cardSummary{
+  font-weight: 100;
   max-height: inherit;
   padding: 5px;
 }
 footer{
+  color: white;
   text-align: center;
+  /* background-color: #879ceb;
+  width: 99%;
+  height: 20vh;
+  margin: auto;
+  border: 2px dotted white;
+  border-radius: 5px;
+  position: fixed;
+  top: 93vh;
+  text-align: center; */
 }
 #display{
   font-size: 10px;
 }
 #episodes{
   height: 22px;
-  width: 200px;
+  width: 50%;
+}
+#searchBox{
+  width: 70%;
+}
+@media only screen and (max-width: 1679px){
+  body{
+    background-color: black;
+  }
+  .main{
+    width: 60%;
+    height: fit-content;
+  }
+  h1{
+    font-size: 50px;
+    width: 300px;
+    text-align: center;
+  }
+  nav{
+    width: 60%;
+  
+   
+  }
+  ul{
+   
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #display{
+    
+    align-self: center;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #showAllBtn{
+    display: none;
+  }
+  #clearBtn{
+    height: 22px;
+    width: 100px;
+  }
+  
+  #episodes{
+    width: 112px;
+  }
+  #searchBox{
+    height: 17px;
+    width: 100px;
+  }
+  
+
+}
+
+@media only screen and (max-width: 1200px){
+  body{
+    background-color: black;
+  }
+  .main{
+    width: 70%;
+    height: fit-content;
+  }
+  h1{
+   
+    width: 300px;
+    text-align: center;
+  }
+  nav{
+    width: 80%;
+   
+  }
+  ul{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #display{
+   
+    align-self: center;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #clearBtn{
+    height: 22px;
+    width: 100px;
+  }
+  
+  #episodes{
+    width: 112px;
+  }
+  #searchBox{
+    height: 17px;
+    width: 100px;
+  }
+  
+
+}
+
+@media only screen and (max-width: 1024px){
+  body{
+    background-color: black;
+  }
+  .main{
+    width: 80%;
+    height: fit-content;
+  }
+  h1{
+   
+    width: 300px;
+    text-align: center;
+  }
+  nav{
+    width: 80%;
+   
+  }
+  ul{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #display{
+   
+    align-self: center;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #clearBtn{
+    height: 22px;
+    width: 100px;
+  }
+  #showAllBtn{
+    display: none;
+  }
+  #episodes{
+    width: 112px;
+  }
+  #searchBox{
+    height: 17px;
+    width: 100px;
+  }
+  
+
+}
+
+
+@media only screen and (max-width: 768px){
+  body{
+    background-color: black;
+  }
+  .main{
+    width: fit-content;
+    height: fit-content;
+  }
+  h1{
+   
+    width: 300px;
+    text-align: center;
+  }
+  nav{
+    width: 90%;
+   
+  }
+  ul{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #display{
+   
+    align-self: center;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #clearBtn{
+    height: 22px;
+    width: 100px;
+  }
+  #showAllBtn{
+    display: none;
+  }
+  #episodes{
+    width: 112px;
+  }
+  #searchBox{
+    height: 17px;
+    width: 100px;
+  }
+  
+
+}
+
+
+
+@media only screen and (max-width: 414px){
+ 
+  body{
+    background-color: black;
+    width: fit-content;
+  }
+ 
+  nav{
+    width: fit-content;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  #showAllBtn{
+    display: none;
+  }
+  #clearBtn{
+    width: 112px;
+  }
+  #searchBox {
+    width: 104px;
+    text-align: center;
+    
+  }
+  h1{
+    text-align: center;
+  }
+  ul{
+    
+    width: 60%;
+
+    display: flex;
+    justify-content: center;
+
+    
+    
+  }
+  .main{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #card{
+    width: fit-content;
+    height: fit-content;
+    
+  }
+  #display{
+    text-align: center;
+  }
+  #footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+   
+  }
+  form{
+    
+    width: 200px;
+    
+
+    
+  }
+  
+
+}
+@media only screen and (max-width: 411px){
+ 
+  body{
+    background-color: black;
+    width: fit-content;
+  }
+ 
+  nav{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  #showAllBtn{
+    display: none;
+  }
+  #clearBtn{
+    width: 112px;
+  }
+  #searchBox {
+    width: 104px;
+    text-align: center;
+    
+  }
+  h1{
+    text-align: center;
+  }
+  ul{
+    width: 60%;
+
+    display: flex;
+    
+    
+  }
+  .main{
+   
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #card{
+    width: fit-content;
+    height: fit-content;
+    
+  }
+  #display{
+    text-align: center;
+  }
+  #footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+   
+  }
+  form{
+   
+    width: 200px;
+    
+
+    
+  }
+  
+
+}
+@media only screen and (max-width: 375px){
+  body{
+    background-color: black;
+   
+  }
+ 
+  nav{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  #showAllBtn{
+    display: none;
+  }
+  #clearBtn{
+    width: 112px;
+  }
+  #searchBox {
+    width: 104px;
+    text-align: center;
+    
+  }
+  h1{
+    text-align: center;
+  }
+  ul{
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .main{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #card{
+    width: fit-content;
+    height: fit-content;
+    
+  }
+  #display{
+    text-align: center;
+  }
+  #footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+   
+  }
+  form{
+    width: 200px;
+  }
+
+}
+
+
+@media only screen and (max-width: 360px){
+  body{
+    background-color: black;
+    width: fit-content;
+  }
+ 
+  nav{
+    width: fit-content;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  #showAllBtn{
+    display: none;
+  }
+  #clearBtn{
+    width: 112px;
+  }
+  #searchBox {
+    width: 104px;
+    text-align: center; 
+  }
+ 
+  h1{
+    text-align: center;
+  }
+  ul{
+    width: 60%;
+    display: flex;
+    
+    
+  }
+  .main{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #card{
+    width: fit-content;
+    height: fit-content;
+    
+  }
+  #display{
+    text-align: center;
+    
+  }
+  #footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+    
+   
+  }
+  #form{
+  
+    width: 300px;
+    
+
+    
+  }
+  
+
 }

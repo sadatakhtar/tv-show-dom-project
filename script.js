@@ -142,7 +142,10 @@ showAllEpisodes.onclick = () => {
   location.reload();
 }
 clearButton.onclick = () =>{
+  document.getElementById('searchBox').value = '';
+  location.reload();
   mainDiv.textContent="";
+  
 }
 liveSearchBox.addEventListener('input', searchHandler);
 
@@ -172,7 +175,7 @@ function searchHandler(){
     cardImage.src = `${filteredEpisodes[i].image.medium}`;
     cardImage.style.borderRadius = "5px"
     cardSummary.textContent = `${filteredEpisodes[i].summary}`;
-    displayResult.textContent = `showing ${filteredEpisodes.length}/${totalEpisodes} episodes`;
+    displayResult.textContent = `Displaying ${filteredEpisodes.length}/${totalEpisodes} episodes`;
 
     //APPEND TO PARENT NODES
     mainDiv.appendChild(displayCardDiv);
