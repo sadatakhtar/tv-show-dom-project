@@ -449,7 +449,7 @@ footer{
   }
   #searchBox {
     width: 104px;
-    text-align: center;
+    text-align: start;
     
   }
   h1{
@@ -511,7 +511,8 @@ footer{
   }
   #searchBox {
     width: 70px;
-    height: 16px;  
+    height: 16px; 
+    text-align: start; 
   }
   #episodes{
     width: 70px;
@@ -520,6 +521,7 @@ footer{
   h1{
     text-align: center;
   }
+
   ul{
     width: 50%;
     display: flex;
@@ -543,9 +545,7 @@ footer{
     padding-bottom: 70px;
     
   }
-  h1{
-    
-  }
+  
   #footer{
    display: flex;
    justify-content: center;
