@@ -57,7 +57,12 @@ function setup() {
           
           //ADD CONTENTS TO ELEMENTS
           title.textContent= `${tvShows[i].name}`;
-          cardImage.src = `${tvShows[i].image}`; //when i remove image (image.medium) the drop down menus work fine???
+          // if(tvShows[i].image.medium === null){
+          //   cardImage.src = JSON.stringify(tvShows[i].image.medium);
+          // }else{
+          //   cardImage.src = `${tvShows[i].image.medium}`;
+          // }
+          cardImage.src = `${tvShows[i].image}`;
           cardImage.style.borderRadius = "5px";
           let modifiedSummary = `${tvShows[i].summary}`.substring(3, tvShows[i].summary.length-4);
           cardSummary.textContent = modifiedSummary;
