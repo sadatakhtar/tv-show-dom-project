@@ -222,6 +222,7 @@ function setup() {
     
         clearButton.onclick = () =>{
         document.getElementById('searchBox').value = '';
+        location.reload();
         }
         liveSearchBox.addEventListener('input', searchHandler);
     

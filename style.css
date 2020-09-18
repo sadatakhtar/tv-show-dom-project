@@ -1,8 +1,6 @@
 #root {
   background-color: black;
-}
-body{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Alata', sans-serif;
   
 }
 header{
@@ -12,22 +10,21 @@ header{
 nav{
   
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 80%;
   margin: auto;
 }
 
 h1{
-  
+  font-weight: 600;
   font-size: 40px;
-  font-weight: 500;
 }
 
 ul{
- 
+  
   display: flex;
-  justify-content: space-around;
-  width: 70%;
+  justify-content: start;
+  width: 60%;
   margin: auto;
 }
 li{
@@ -45,6 +42,17 @@ li{
   height: fit-content;
   margin: auto;
 }
+h4{
+  font-size: 14px;
+  margin: 0;
+  padding-left: 5px;
+  font-weight: 100;
+}
+#episodes, #shows{
+  height: 22px;
+  width: 180px;
+}
+
 #card{
   margin: 10px;
   
@@ -71,35 +79,529 @@ li{
   align-items: center;
 }
 #cardSummary{
+  font-weight: 100;
   max-height: inherit;
   padding: 5px;
-  
-  font-weight: 200;
 }
 footer{
+  color: white;
   text-align: center;
 }
 #display{
   font-size: 10px;
+  text-align: end;
 }
-#episodes, #shows{
+#episodes{
   height: 22px;
-  width: 200px;
+  width: 50%;
 }
-#showTitle{
+#searchBox{
+  width: 70%;
+}
+@media only screen and (max-width: 1679px){
+  body{
+    background-color: black;
+  }
+  .main{
+    
+    width: 55%;
+    height: fit-content;
+  }
+  h1{
+    font-size: 50px;
+    width: 300px;
+    text-align: center;
+  }
+  nav{
+    width: 60%;
   
-  background-color: #879ceb;
-  width: 40%;
-  padding-bottom: 10px;
-  margin: auto;
-  margin-top: 20px;
-  color: black;
-  text-align: center;
- 
+   
+  }
+  ul{
+   
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #display{
+    
+    align-self: center;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #showAllBtn{
+    height: 22px;
+    display: none;
+  }
+  #clearBtn{
+    height: 22px;
+    width: 100px;
+  }
+  
+  #episodes{
+    width: 112px;
+  }
+  #searchBox{
+    height: 17px;
+    width: 100px;
+  }
+  #card{
+    
+    height: 450px;
+    display: flex;
+    justify-content: start;
+    align-self: center;
+    align-items: center;
+    
+  }
+  
+
 }
-h4{
-  font-size: 14px;
-  margin: 0;
-  padding-left: 5px;
-  font-weight: 100;
+
+@media only screen and (max-width: 1200px){
+  body{
+    background-color: black;
+  }
+  .main{
+    width: 70%;
+    height: fit-content;
+  }
+  h1{
+   
+    width: 300px;
+    text-align: center;
+  }
+  nav{
+    width: 80%;
+   
+  }
+  ul{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #display{
+   
+    align-self: center;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #clearBtn{
+    height: 22px;
+    width: 100px;
+  }
+  
+  #episodes{
+    width: 112px;
+  }
+  #searchBox{
+    height: 17px;
+    width: 100px;
+  }
+  
+
+}
+
+@media only screen and (max-width: 1024px){
+  body{
+    background-color: black;
+  }
+  .main{
+    width: 80%;
+    height: fit-content;
+  }
+  h1{
+   
+    width: 300px;
+    text-align: center;
+  }
+  nav{
+    width: 80%;
+   
+  }
+  ul{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #display{
+   
+    align-self: center;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #clearBtn{
+    height: 22px;
+    width: 100px;
+  }
+  #showAllBtn{
+    display: none;
+  }
+  #episodes{
+    width: 112px;
+  }
+  #searchBox{
+    height: 17px;
+    width: 100px;
+  }
+  
+  
+
+}
+
+
+@media only screen and (max-width: 768px){
+  body{
+    background-color: black;
+  }
+  .main{
+    width: fit-content;
+    height: fit-content;
+  }
+  h1{
+   
+    width: 300px;
+    text-align: center;
+  }
+  nav{
+    width: 90%;
+   
+  }
+  #card{
+    width: 220px;
+    height: 450px;
+    display: flex;
+    justify-content: start;
+    align-self: center;
+    align-items: center;
+    
+  }
+  ul{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #display{
+   
+    align-self: center;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #clearBtn{
+    height: 22px;
+    width: 100px;
+  }
+  #showAllBtn{
+    display: none;
+  }
+  #episodes{
+    width: 112px;
+  }
+  #searchBox{
+    height: 17px;
+    width: 100px;
+  }
+  
+
+}
+
+
+
+@media only screen and (max-width: 414px){
+ 
+  body{
+    background-color: black;
+    width: fit-content;
+  }
+ 
+  nav{
+    width: fit-content;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  #showAllBtn{
+    display: none;
+  }
+  #clearBtn{
+    width: 112px;
+  }
+  #searchBox {
+    width: 104px;
+    text-align: center;
+    
+  }
+  h1{
+    text-align: center;
+  }
+  ul{
+    
+    width: 60%;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+
+    
+    
+  }
+  .main{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #card{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    
+  }
+  #display{
+    text-align: center;
+  }
+  #footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+   
+  }
+  /* form{
+    
+    width: 200px;
+ 
+  } */
+  
+
+}
+@media only screen and (max-width: 411px){
+ 
+  body{
+    background-color: black;
+    width: fit-content;
+  }
+ 
+  nav{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  #showAllBtn{
+    display: none;
+  }
+  #clearBtn{
+    width: 112px;
+  }
+  #searchBox {
+    width: 104px;
+    text-align: center;
+    
+  }
+  h1{
+    text-align: center;
+  }
+  ul{
+    width: 60%;
+
+    display: flex;
+    
+    
+  }
+  .main{
+   
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #card{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    
+  }
+  #display{
+    text-align: center;
+  }
+  #footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+   
+  }
+  form{
+   
+    width: 200px;
+    
+
+    
+  }
+  
+
+}
+@media only screen and (max-width: 375px){
+  body{
+    background-color: black;
+   
+  }
+ 
+  nav{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  #showAllBtn{
+    display: none;
+  }
+  #clearBtn{
+    width: 112px;
+  }
+  #searchBox {
+    width: 104px;
+    text-align: start;
+    
+  }
+  h1{
+    text-align: center;
+  }
+  ul{
+    width: 60%;
+    padding-right: 20px;
+    display: flex;
+    
+    
+  }
+  .main{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #card{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    
+  }
+  #display{
+    text-align: center;
+  }
+  #footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+   
+  }
+  form{
+    width: 200px;
+  }
+
+}
+
+
+@media only screen and (max-width: 360px){
+  body{
+    background-color: black;
+    width: fit-content;
+  }
+ 
+  nav{
+  
+    width: fit-content;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  #showAllBtn{
+    display: none;
+  }
+  #clearBtn{
+    width: 100px;
+  }
+  #searchBox {
+    width: 70px;
+    height: 16px; 
+    text-align: start; 
+  }
+  #episodes{
+    width: 70px;
+  }
+ 
+  h1{
+    text-align: center;
+  }
+
+  ul{
+    width: 50%;
+    display: flex;
+    flex-direction: row; 
+    padding-right: 20px;
+    
+  }
+  .main{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #card{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    
+  }
+  #display{
+    text-align: center;
+    padding-bottom: 70px;
+    
+  }
+  
+  #footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+  }
+  
+  
+
 }
